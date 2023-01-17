@@ -1,0 +1,95 @@
+.attribution {
+  color: white; }
+
+html {
+  font-size: 18px; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #0d192b;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center; }
+
+.card {
+  border: none;
+  background: #14253d;
+  border-radius: 10px; }
+  .card .card-body {
+    background: #14253d;
+    border-radius: 15px; }
+  .card .dice img {
+    border-radius: 10px; }
+  .card .card-title a {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    color: white !important; }
+  .card .card-title a:hover {
+    color: #00fff7 !important; }
+  .card .card-subtitle {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: #8bacda; }
+  .card .eth-icon {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #00fff7; }
+  .card .clock {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    color: #8bacda; }
+  .card .creator {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: #8bacda; }
+  .card .name {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    color: white; }
+  .card a:hover {
+    color: #00fff7;
+    text-decoration: none; }
+  .card .creator-image {
+    max-width: 10%;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: white; }
+  .card .spacer {
+    border-bottom: 0.1px solid;
+    border-color: #8bacda;
+    margin-bottom: .5rem; }
+  .card .footer {
+    margin-top: 1.2rem; }
+
+.dice img {
+  position: relative; }
+
+.container .card-body .feature-image {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  background: rgba(0, 255, 247, 0.6);
+  top: 0;
+  width: 87%;
+  height: 50%;
+  border-radius: 10px;
+  transform: translate(0, 26px);
+  opacity: 0; }
+
+.container .card-body .feature-image img {
+  top: 43%;
+  left: 43%;
+  position: absolute; }
+
+.container .card-body .feature-image:hover {
+  opacity: 1; }
+
+@media (min-width: 768px) {
+  .card {
+    height: 600px;
+    width: 350px;
+    margin: auto !important; }
+  .card-body {
+    border-radius: 10px; } }

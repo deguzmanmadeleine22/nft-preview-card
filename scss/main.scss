@@ -1,0 +1,148 @@
+// Primary
+
+$primary: hsl(215, 51%, 70%);
+$secondary: hsl(178, 100%, 50%);
+
+// Neutral
+
+$main-bg: hsl(217, 54%, 11%);
+$card-bg: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+// Typography
+
+$font: 'Outfit', sans-serif;
+
+@mixin font-light($font_size) {
+  font-family: $font;
+  font-weight: 300;
+}
+  
+@mixin font-regular($font_size) {
+  font-family: $font;
+  font-weight: 400;
+}
+  
+@mixin font-sbold($font_size) {
+  font-family: $font;
+  font-weight: 600;
+}
+
+.attribution {
+  color: $white;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: $main-bg;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: none;
+  background: $card-bg;
+  border-radius: 10px;
+.card-body {
+  background: $card-bg;
+  border-radius: 15px;
+  }
+  .dice img {
+    border-radius: 10px;
+  }
+  .card-title a {
+    @include font-sbold(3rem);
+    color: $white !important;
+  }
+  .card-title a:hover {
+    color: $secondary !important; 
+  }
+
+  .card-subtitle {
+    @include font-light(1rem);
+    color: $primary;
+  }
+  .eth-icon {
+    @include font-regular(1rem);
+    color: $secondary;
+  }
+  .clock {
+    @include font-regular(1rem);
+    color: $primary;
+  }
+  .creator {
+    @include font-light(1rem);
+    color: $primary;
+  }
+  .name {
+    @include font-light(1rem);
+    color: $white;
+  }
+  a:hover{
+    color: $secondary;
+    text-decoration: none;
+  }
+  .creator-image {
+    max-width: 10%;
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: $white;
+  }
+  .spacer {
+    border-bottom: 0.1px solid;
+    border-color: $primary;
+    margin-bottom: .5rem;
+  }
+  .footer {
+    margin-top: 1.2rem;
+  }
+}
+
+.dice img {
+  position: relative;
+}
+
+.container .card-body .feature-image {
+  position: absolute;
+  top: 50%;
+  z-index: 999;
+  background: rgba(0, 255, 247, 0.6); 
+  top: 0;
+  width: 87%;
+  height: 50%;
+  border-radius: 10px;
+  transform: translate(0, 26px);
+  opacity: 0;
+}
+
+.container .card-body .feature-image img {
+  top: 43%;
+  left: 43%;
+  position: absolute;
+  
+}
+
+.container .card-body .feature-image:hover {
+  opacity: 1;
+}
+
+
+@media (min-width:768px) {
+  .card {
+    height: 600px;
+    width: 350px;
+    margin: auto !important;
+  }
+  .card-body {
+    border-radius: 10px;
+  }
+  
+}
